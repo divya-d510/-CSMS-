@@ -103,23 +103,6 @@ class VehicleServiceTest {
         assertNull(response);
     }
 
-//    @Test
-//    public void testGetVehicle(){
-//        GetVehicleReq getVehicleReq = new GetVehicleReq();
-//        getVehicleReq.setModel("Swift");
-//        getVehicleReq.setColor("Red");
-//        List<GetVehicleRes> getVehicleRes = vehicleService.getVehicle(getVehicleReq);
-//        System.out.println(getVehicleRes);
-//        // Assert
-//        assertNotNull(getVehicleRes); // Ensure the response is not null
-//        assertFalse(getVehicleRes.isEmpty()); // Ensure the list is not empty
-//
-//        // Checking the first vehicle's color
-//        assertEquals(getVehicleReq.getColor(), getVehicleRes.get(0).getColor());
-//
-//        // Print the result for debugging
-//        System.out.println(getVehicleRes);
-//    }
 
     @Test
     void testUpdateVehicle_Success() {
