@@ -70,42 +70,6 @@ class VehicleDaoTest {
         verify(vehicleRepository, times(1)).save(any()); // Ensure save was called once
     }
 
-//    @Test
-//    void testGetVehicleById_Success() {
-//        // Arrange
-//        VehicleEntity vehicleEntity = new VehicleEntity();
-//        vehicleEntity.setVehicleId(1);
-//        vehicleEntity.setCustomerId(1);
-//        vehicleEntity.setLicensePlate("XYZ123");
-//        vehicleEntity.setModel("Model1");
-//        vehicleEntity.setMake("Make1");
-//        vehicleEntity.setYear(2020);
-//        vehicleEntity.setColor("Red");
-//
-//        when(vehicleRepository.findById(1)).thenReturn(Optional.of(vehicleEntity));
-//
-//        // Act
-//        GetVehicleRes result = vehicleDao.getVehicleById(1);
-//
-//        // Assert
-//        assertNotNull(result);
-//        assertEquals(1, result.getVehicleId());
-//        assertEquals("XYZ123", result.getLicensePlate());
-//        verify(vehicleRepository, times(1)).findById(1); // Verify repository interaction
-//    }
-//
-//    @Test
-//    void testGetVehicleById_NotFound() {
-//        // Arrange
-//        when(vehicleRepository.findById(1)).thenReturn(Optional.empty());
-//
-//        // Act & Assert
-//        Exception exception = assertThrows(EntityNotFoundException.class, () -> {
-//            vehicleDao.getVehicleById(1);
-//        });
-//        assertTrue(exception.getMessage().contains("Vehicle not found with ID"));
-//    }
-
     @Test
     void testGetVehicle_Success() {
         // Arrange
